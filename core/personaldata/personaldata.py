@@ -38,7 +38,7 @@ def try_counter(user_id):
             writer.writerows(rows)
 
 def give_attemp_index(user_id):
-    with open('PersonalData.csv') as f:
+    with open('PersonalData.csv', encoding='cp1251') as f:
         reader = csv.reader(f)
         for row in reader:
             if row[0] == str(user_id):
