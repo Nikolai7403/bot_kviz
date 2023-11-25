@@ -6,7 +6,7 @@ def add_csv(path, data):
         writer.writerow(data)
 
 def check_user_register(user_id) -> bool:
-    with open('PersonalData.csv') as f:
+    with open('PersonalData.csv', encoding='cp1251') as f:
         reader = csv.reader(f)
         for row in reader:
             if len(row) == 0:
