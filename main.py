@@ -31,5 +31,7 @@ async  def start():
 while True:
     try:
         asyncio.run(start())
+    except KeyboardInterrupt:
+        break
     except:
         print("я упал. ПАМАГИТЕ!!!")
